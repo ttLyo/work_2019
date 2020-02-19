@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <title>财务机器人</title>
+    <link href="static/css/style.css" rel="stylesheet">
+    <script lang="javascript" src="src/shim.min.js"></script>
+    <script lang="javascript" src="src/xlsx.full.min.js"></script>
+</head>
+
+<style>
+    #box {
+      padding: 20px;
+      background-color: white;
+
+    }
+    #box  td {
+        border-right: 0.21px ridge #d1c6c6;
+        border-top: 0.21px ridge #d1c6c6;
+        padding: 3px;
+        font-size: 15px
+      }
+      #box table{
+        border-left: 0.21px ridge #d1c6c6;
+        border-bottom: 0.21px ridge #d1c6c6;
+        margin: 0 auto;
+      }
+    .ivu-table td{
+        height: 30px;
+    }
+    .ivu-table th{
+      overflow:hidden;
+      text-overflow:clip;
+      white-space:normal;
+    }
+    .ivu-table-cell {
+        padding-left: 4px;
+        padding-right: 0px;
+        white-space: nowrap;
+    }
+    .ivu-table-cell:hover {
+        overflow:visible;
+    }
+    .header-fixed .app-header {
+      z-index: 500;
+    }
+    .ivu-modal-header{
+        border-bottom: 1px solid #cfd0d1;
+        padding: 7px 16px;
+    }
+    .ivu-modal-content{
+        background-color: #e3f0fd;
+    }
+    .sidebar-minimized .sidebar {
+        z-index: 1000;
+    }
+  </style>
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden ">
+<div id="app"></div>
+
+<script src=<%= htmlWebpackPlugin.options.path %>js/jquery.min.js></script>
+<script src=<%= htmlWebpackPlugin.options.path %>js/three.min.js></script>
+<script src=<%= htmlWebpackPlugin.options.path %>bower_components/plupload/js/plupload.full.min.js></script>
+<script src=<%= htmlWebpackPlugin.options.path %>bower_components/qiniu/dist/qiniu.min.js></script>
+<script src=<%= htmlWebpackPlugin.options.path %>js/jquery.particleground.min.js></script>
+<!-- <script src="https://cdn.bootcss.com/tinymce/4.6.6/tinymce.min.js"></script> -->
+
+</body>
+
+</html>
